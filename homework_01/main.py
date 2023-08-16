@@ -37,6 +37,8 @@ def check_even (p_num):
 
 
 def chek_prime(p_num):
+    if p_num < 2:
+        return False
     for i in range(2, (p_num//2)+1):
         if p_num % i == 0:
             return False
@@ -61,5 +63,5 @@ def filter_numbers(p_num, p_param):
     <<< [2, 4]
     """
 
-result = filter_numbers([1, 2, 3, 5,6,7,8], PRIME)
+result = filter_numbers([0,1, 2, 3, 5,6,7,8], PRIME)
 print(result)
